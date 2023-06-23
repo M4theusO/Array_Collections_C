@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {}
+    "C:\\Users\\Matheus Oliveira\\Desktop\\Curso Csharp\\Array_Collections_C\\Array_Collections_C-aula02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {}
   },
   "projects": {
-    "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {
+    "C:\\Users\\Matheus Oliveira\\Desktop\\Curso Csharp\\Array_Collections_C\\Array_Collections_C-aula02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus Oliveira\\Desktop\\Curso Csharp\\Array_Collections_C\\Array_Collections_C-aula02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
         "projectName": "bytebank_ATENDIMENTO",
-        "projectPath": "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\curso\\curso_c_collections\\Aula02\\bytebank_ATENDIMENTO_BKP02\\bytebank_ATENDIMENTO\\obj\\",
+        "projectPath": "C:\\Users\\Matheus Oliveira\\Desktop\\Curso Csharp\\Array_Collections_C\\Array_Collections_C-aula02\\bytebank_ATENDIMENTO\\bytebank_ATENDIMENTO.csproj",
+        "packagesPath": "C:\\Users\\Matheus Oliveira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Matheus Oliveira\\Desktop\\Curso Csharp\\Array_Collections_C\\Array_Collections_C-aula02\\bytebank_ATENDIMENTO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matheus Oliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

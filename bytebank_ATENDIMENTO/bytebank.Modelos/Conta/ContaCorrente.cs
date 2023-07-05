@@ -1,10 +1,10 @@
 ﻿namespace bytebank.Modelos.Conta
 {
-    public class ContaCorrente : IComparable<ContaCorrente>
+    public class ContaCorrente:IComparable<ContaCorrente>
     {     
        
         public Cliente Titular{get;set;}
-        public string? Nome_Agencia{ get; set; }
+        public string Nome_Agencia{ get; set; }
 
         private int _numero_agencia;
         public int Numero_agencia
@@ -27,8 +27,8 @@
         
         }
 
-        private string? _conta;
-        public string? Conta
+        private string _conta;
+        public string Conta
         {
             get
             {
@@ -111,15 +111,15 @@
             }
         }
 
-        public int CompareTo(ContaCorrente? other)
+        public int CompareTo(ContaCorrente? outro)
         {
-            if (other == null)
+            if (outro==null)
             {
-                return 1;
+              return 1;
             }
             else
             {
-                return this.Numero_agencia.CompareTo(other.Numero_agencia);
+                return this.Numero_agencia.CompareTo(outro.Numero_agencia);
             }
         }
 
@@ -132,20 +132,30 @@
 
         }
 
+        public ContaCorrente(int numero_agencia)
+        {
+            Numero_agencia = numero_agencia;
+            Conta = Guid.NewGuid().ToString().Substring(0, 8);
+            Titular = new Cliente();
+            TotalDeContasCriadas += 1;
+        }
+
+
         public static int TotalDeContasCriadas { get; set; }
 
-        //public override bool Equals(object? conta)
-        //{
-        //    ContaCorrente outroConta = conta as ContaCorrente;
-            
-        //    if (outroConta == null)
-        //    {
-        //        return false;
-        //    }
+        public override string ToString()
+        {
 
-        //    return Numero_agencia == outroConta.Numero_agencia && 
-        //        Conta.Equals(outroConta.Conta);
-        //}
+            return $" === DADOS DA CONTA === \n" +
+                   $"Número da Conta : {this.Conta} \n" +
+                   $"Número da Agência : {this.Numero_agencia} \n" +
+                   $"Saldo da Conta: {this.Saldo} \n" +
+                   $"Titular da Conta: {this.Titular.Nome} \n" +
+                   $"CPF do Titular  : {this.Titular.Cpf} \n" +
+                   $"Profissão do Titular: { this.Titular.Profissao}\n\n";
+                   
+
+        }
 
 
     }

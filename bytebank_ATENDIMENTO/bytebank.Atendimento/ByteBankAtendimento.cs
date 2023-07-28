@@ -149,13 +149,13 @@ namespace bytebank_ATENDIMENTO.bytebank.Atendimento
             return consulta;
         }
 
-        private ContaCorrente ConsultaPorCPFTitular(string? cpf)
+        private ContaCorrente ConsultaPorCPFTitular(string cpf)
         {
 
             return _listaDeContas.Where(conta => conta.Titular.Cpf == cpf).FirstOrDefault();
         }
 
-        private ContaCorrente ConsultaPorNumeroConta(string? numeroConta)
+        private ContaCorrente ConsultaPorNumeroConta(string numeroConta)
         {
             return _listaDeContas.Where(conta => conta.Conta == numeroConta).FirstOrDefault();
         }

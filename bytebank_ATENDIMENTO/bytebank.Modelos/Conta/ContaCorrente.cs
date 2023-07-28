@@ -4,7 +4,7 @@
     {     
        
         public Cliente Titular{get;set;}
-        public string Nome_Agencia{ get; set; }
+        public string? Nome_Agencia{ get; set; }
 
         private int _numero_agencia;
         public int Numero_agencia
@@ -27,8 +27,8 @@
         
         }
 
-        private string _conta;
-        public string Conta
+        private string? _conta;
+        public string? Conta
         {
             get
             {

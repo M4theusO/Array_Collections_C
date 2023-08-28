@@ -1,7 +1,7 @@
 ﻿
 namespace bytebank.Modelos.ADM.Funcionarios
 {
-    public class Diretor : FuncionarioAutenticavel
+    internal class Diretor : FuncionarioAutenticavel
     {
         public Diretor(string cpf) : base(5000, cpf)
         {
@@ -13,7 +13,7 @@ namespace bytebank.Modelos.ADM.Funcionarios
             this.Salario *= 1.15;
         }
 
-        public override double getBonificacao()
+        protected internal override double getBonificacao()
         {
             return this.Salario * 0.5;
         }

@@ -1,5 +1,17 @@
-﻿using bytebank.Modelos.Conta;
+﻿using bytebank.Modelos.ADM.Funcionarios;
+using bytebank.Modelos.Conta;
 using bytebank_ATENDIMENTO.bytebank.Atendimento;
-Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
-new ByteBankAtendimento().AtendimentoCliente();
+using bytebank_GeradorChavePix;
+using bytebank_Modelos.bytebank.Modelos.ADM.Utilitario;
 
+Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
+//new ByteBankAtendimento().AtendimentoCliente();
+
+Console.WriteLine(GeradorPix.GetChavePix());
+
+var listaDeChaves = GeradorPix.GetChavesPix(10);
+
+foreach (var chave in listaDeChaves)
+{
+    Console.WriteLine(chave);
+}
